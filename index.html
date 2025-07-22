@@ -39,8 +39,148 @@
         </nav>
     </header>
     <main>
-        <h2>Welcome to our system </h2>
-        <p>Quick access on our system </p>
+        <section class="flex justify-between">
+            <div>
+                <h2>Welcome back,<span id="name-color">John Smith</span></h2>
+                <p>Quick access on our system with this dashboard. </p>
+            </div>
+            <div>
+                <button class="btn btn-blue">Add new member</button>
+                <button class="btn btn-orange">Add new book</button>
+                <button class="btn btn-green">Return book</button>
+                <button class="btn btn-teal">Boorow book</button>
+            </div>
+        </section>
+        <section class="card">
+            <h3>System overview</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, reprehenderit! Nisi impedit et necessitatibus ullam laboriosam molestia</p>
+            <div class="flex my-24 justify-between">
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-blue">
+                        <span class="material-symbols-outlined">server_person</span>
+                    </span>
+                    <h3>203</h3>
+                    <p class="text-sm">Total members</p>
+                </div>
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-teal">
+                        <span class="material-symbols-outlined">book_6</span>
+                    </span>
+                    <h3>2300</h3>
+                    <p class="text-sm">Total of book</p>
+                </div>
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-green">
+                        <span class="material-symbols-outlined">newsstand</span>
+                    </span>
+                    <h3>200</h3>
+                    <p class="text-sm">Avalible book for borrow</p>
+                </div>
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-orange">
+                        <span class="material-symbols-outlined">auto_stories_off</span>
+                    </span>
+                    <h3>35</h3>
+                    <p class="text-sm">Book has been borrow today</p>
+                </div>
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-yellow">
+                        <span class="material-symbols-outlined">alarm_on</span>
+                    </span>
+                    <h3>06</h3>
+                    <p class="text-sm">Book will return today</p>
+                </div>
+                <div class="flex flex-col align-center">
+                    <span id="icon-container" class="flex justify-center align-center bg-icon-red">
+                        <span class="material-symbols-outlined">timer_off</span>
+                    </span>
+                    <h3>03</h3>
+                    <p class="text-sm">Book late to return</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Record of the book that will return today and over deadline</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>MEMBER ID</th>
+                        <th>MEMBER NAME</th>
+                        <th>BOOK TITLE</th>
+                        <th>BORROW DATE</th>
+                        <th>DUE DATE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><h4>MEM001</h4></td>
+                        <td>Alice Johnson</td>
+                        <td>The Great Advanture</td>
+                        <td>2024-06-20</td>
+                        <td>2024-07-04</td>
+                        <td><button class="overdue">Overdue</button></td>
+                    </tr>
+                    <tr>
+                        <td><h4>MEM002</h4></td>
+                        <td>Bob Williams</td>
+                        <td>Mystery of the Old House</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><button class="ontime">On time</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card">
+            <h3>Popular Book</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>BOOK ID</th>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>GENCE</th>
+                        <th>AVAILABLELITY</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><h4>BOOK1</h4></td>
+                        <td>The Great Advanture</td>
+                        <td>The Great Advanture</td>
+                        <td>2024-06-20</td>
+                        <td>2024-07-04</td>
+                        <td><button class="overdue">Overdue</button></td>
+                    </tr>
+                    <tr>
+                        <td><h4>BOOK2</h4></td>
+                        <td>Bob Williams</td>
+                        <td>Mystery of the Old House</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><button class="ontime">On time</button></td>
+                    </tr>
+                    <tr>
+                        <td><h4>BOOK3</h4></td>
+                        <td>Bob Williams</td>
+                        <td>Mystery of the Old House</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><button class="ontime">On time</button></td>
+                    </tr>
+                    <tr>
+                        <td><h4>BOOK4</h4></td>
+                        <td>Bob Williams</td>
+                        <td>Mystery of the Old House</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><button class="ontime">On time</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
 
